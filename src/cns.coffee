@@ -15,7 +15,7 @@
 module.exports = (robot) ->
   robot.respond /site (.*)/i, (msg) ->
     msg
-      .http(process.env.HUBOT_CNS_HOST + "/api/site/code/" + msg.match[1])
+      .http(process.env.HUBOT_CNS_HOST + "/api/hubotsite/code/" + msg.match[1])
       .headers('X-API-KEY': process.env.HUBOT_CNS_API_KEY)
       .get() (err, res, body) ->
         resp = "";
@@ -24,4 +24,4 @@ module.exports = (robot) ->
           results.error.errors.forEach (err) ->
             resp += err.message
         else
-        	msg.send results.data.site_name
+        	msg.send results.data
