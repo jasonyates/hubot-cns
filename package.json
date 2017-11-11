@@ -1,0 +1,31 @@
+{
+  "name": "hubot-cns",
+  "description": "Hubot plugin to integrate with cNS Team",
+  "version": "0.0.1",
+  "author": "Jason Yates <jyates@expedia.com>",
+  "license": "MIT",
+  "keywords": "hubot, hubot-scripts",
+  "repository": {
+    "type": "git",
+    "url": "git://ewegithub.sb.karmalab.net/jyates/hubot-cns.git"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "hubot": ">=2 <10 || 0.0.0-development"
+  },
+  "devDependencies": {
+    "hubot": "2.x",
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*",
+    "grunt-mocha-test": "~0.7.0",
+    "grunt-release": "~0.6.0",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "grunt test"
+  }
+}
